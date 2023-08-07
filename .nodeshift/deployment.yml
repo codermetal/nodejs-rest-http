@@ -5,12 +5,12 @@ spec:
         - readinessProbe:
             httpGet:
               path: /api/greeting
-              port: 8080
+              port: 8081
               scheme: HTTP
           livenessProbe:
             httpGet:
               path: /api/greeting
-              port: 8080
+              port: 8081
               scheme: HTTP
             initialDelaySeconds: 60
             periodSeconds: 30
